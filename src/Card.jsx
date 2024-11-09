@@ -1,10 +1,9 @@
-//Este componente deberia recibir por props y mostrar en pantalla la informacion
-//que envia el usuario
-
-function Card() {
+function Card({ data }) {
   return (
     <div>
-      <h2>Esto es un componente</h2>
+      <h2>Información ingresada</h2>
+      <p>Nombre: {data.nom}</p>
+      <p>Color favorito: {data.color}</p>
     </div>
   );
 }
